@@ -38,7 +38,6 @@ class UrlService {
   }
 
   static async getUrl(shortCode) {
-    console.log(shortCode, "shortCode");
     const url = await UrlSchema.findOne({ shortCode });
     if (!url) return { data: "short code not found", statusCode: 404 };
 

@@ -15,3 +15,5 @@ database()
 server.listen(Port, () => {
   console.log(`Server is running on port: ${Port}`);
 });
+
+// Unable to log into my free hosting account.
