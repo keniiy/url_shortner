@@ -69,7 +69,7 @@ class Logger {
   _getTransports() {
     const { console, file } = this._commonOptions;
     let level = this.debugMode ? "debug" : "info";
-    if (this._environment === "production" && this.debugMode) level = "error";
+    if (this._environment === "test" && this.debugMode) level = "error";
     const consoleOpt = { ...console, level };
     const fileOpt = {
       ...file,
