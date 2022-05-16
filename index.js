@@ -1,6 +1,6 @@
-const server = require("./app/routes/index");
-const keys = require("./app/config/keys");
-const database = require("./app/config/db");
+const server = require("./App/routes/index");
+const keys = require("./App/config/keys");
+const database = require("./App/config/db");
 
 const Port = keys.PORT;
 
