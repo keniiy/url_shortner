@@ -14,7 +14,7 @@ app.use(helmet());
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(morgan("combined"));
+app.use(morgan("combined", { stream: logger.stream }));
 
 app.use("/", UrlRoutes);
 app.get("/", (req, res) => {
