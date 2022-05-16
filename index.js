@@ -2,7 +2,7 @@ const server = require("./App/routes/index");
 const keys = require("./App/config/keys");
 const database = require("./App/config/db");
 
-const Port = keys.PORT;
+const Port = keys.PORT || 3000;
 
 database()
   .then(() => {
